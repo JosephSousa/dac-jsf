@@ -1,6 +1,6 @@
 package ifpb.ads.cliente;
 
-import ifpb.ads.infra.ClientesEmMemoria;
+import ifpb.ads.infra.ClientesJDBC;
 import java.util.List;
 
 /**
@@ -10,8 +10,8 @@ import java.util.List;
  */
 public class ClienteService {
 
-    private final Clientes clientes = new ClientesEmMemoria();
-//    private Clientes clientes = new ClientesJDBC();
+//    private final Clientes clientes = new ClientesEmMemoria();
+    private final Clientes clientes = new ClientesJDBC();
 
     public void salvar(Cliente cliente) {
         this.clientes.salvar(cliente);

@@ -1,6 +1,5 @@
 package ifpb.ads.cliente;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,11 +9,11 @@ import java.util.List;
  */
 public interface Clientes {
 
-    public void salvar(Cliente cliente);
+    public boolean salvar(Cliente cliente);
 
-    public void remover(Cliente cliente);
+    public boolean remover(Cliente cliente);
 
-    public void atualizar(Cliente cliente);
+    public boolean atualizar(Cliente cliente);
 
     public List<Cliente> todosOsClientes();
 }

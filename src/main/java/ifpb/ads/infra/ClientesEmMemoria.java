@@ -10,7 +10,7 @@ import java.util.List;
  * @mail ricardo.job@ifpb.edu.br
  * @since 08/06/2017, 08:20:26
  */
-public class ClientesEmMemoria implements Clientes {
+public class ClientesEmMemoria {
 
     private List<Cliente> clientes = new ArrayList<>();
 

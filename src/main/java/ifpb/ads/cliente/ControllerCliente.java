@@ -15,7 +15,7 @@ import javax.inject.Named;
 public class ControllerCliente implements Serializable { //controllerCliente
 
     private Cliente cliente = new Cliente();
-    private ClienteService service = new ClienteService();
+    private final ClienteService service = new ClienteService();
 
     private boolean editando = false;
 
